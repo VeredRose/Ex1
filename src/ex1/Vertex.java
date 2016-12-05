@@ -1,3 +1,5 @@
+package ex1;
+
 import java.util.ArrayList;
 
 public class Vertex implements Comparable<Vertex>{

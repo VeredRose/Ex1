@@ -1,3 +1,5 @@
+package ex1;
+
 /*
  *this class represents an edge in a graph, its weight and which vertex it is attached to
  *the other side is represented by the index of the array of vertexes it is saved in 
