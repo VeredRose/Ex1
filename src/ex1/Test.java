@@ -20,7 +20,7 @@ public class Test {
 	public Test(String GraphFilePath, String outputFilePath) {
 		this.outPutFilePath = outputFilePath;
 		this.GraphFilePath = GraphFilePath;
-		runTest0();		
+			
 	}
 	public Test(String GraphFilePath,String testFilePath, String outputFilePath){
 		this.GraphFilePath = GraphFilePath;
@@ -28,24 +28,7 @@ public class Test {
 		this.outPutFilePath = outputFilePath;
 		runTest1();
 	}
-	private void runTest0() {
-		try {
-			File outputFile= new File(outPutFilePath);
-			PrintWriter printToOutputFile= new PrintWriter(outputFile);
-			start_time = System.currentTimeMillis();
-			Graph g = new Graph(GraphFilePath);
-			end_time = System.currentTimeMillis();
-			totalRunTime = end_time-start_time;
-			Graph_algo graphAlgo = new Graph_algo();
-			printToOutputFile.print("Graph: |V|="+graphAlgo.numOfVertexes(g)+", |E|="+graphAlgo.numOfEdges(g)+","+graphAlgo.isTie(g)+", Radius:"+graphAlgo.radius(g)+",  Diameter:"+ graphAlgo.diameter(g)+", runtime:"+ totalRunTime+"");
-			printToOutputFile.close();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-
-	}
+	
 
 	private void runTest1() {
 
