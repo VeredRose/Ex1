@@ -29,7 +29,8 @@ public class Test {
 		this.outPutFilePath = outputFilePath;
 		runTest1();
 	}
-	
+        
+	/* checking the usual case*/
 private void runTest0() {
 		try {
 			File outputFile= new File(outPutFilePath);
@@ -48,6 +49,8 @@ private void runTest0() {
 
 
 	}
+
+        /*checling the unusal case- the black spots*/
 	private void runTest1() {
 
 		try {
